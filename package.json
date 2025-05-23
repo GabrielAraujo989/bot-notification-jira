@@ -1,0 +1,15 @@
+{
+  "name": "bot-notification-jira",
+  "version": "0.1.0",
+  "description": "Bot para monitorar cards do Jira e enviar notificações via WhatsApp.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "Gabriel Araujo",
+  "license": "MIT",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.28.0"
+  }
+}

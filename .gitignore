@@ -1,0 +1,22 @@
+# Node.js dependencies
+node_modules/
+.venv
+.wwebjs_auth
+.wwebjs_cache
+# Python dependencies
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
