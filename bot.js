@@ -18,14 +18,6 @@ const client = new Client({
 client.on('qr', qr => qrcode.generate(qr, {small:true}));
 client.on('read', () => console.log('bot pronto!!!!!'));
 
-// Mensagens
-client.on('message', msg =>{
-    exec(`python tradutor.py "${msg.body}"`, (error, stdout) =>{
-        if (stdout){
-            msg.reply(`tradução: ${stdout.trim()}`);
-        }
-    });
-});
 
 // Função para rodar o botJira.py e enviar mensagem para o WhatsApp
 function startJiraListener() {

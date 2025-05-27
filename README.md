@@ -64,6 +64,22 @@ https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-
 2. Escaneie o código QR exibido no terminal com sua conta do WhatsApp.
 3. O bot começará a monitorar as issues do Jira e enviar notificações para o WhatsApp.
 
+## Bibliotecas Necessárias
+
+É essencial instalar corretamente as bibliotecas necessárias para o funcionamento do bot. Certifique-se de executar o seguinte comando na raiz do projeto para instalar as dependências:
+
+```bash
+npm install whatsapp-web.js qrcode-terminal
+```
+
+Essas bibliotecas são fundamentais para a integração com o WhatsApp Web e para a exibição do QR Code no terminal.
+
+### Exemplo de QR Code
+
+Ao iniciar o bot, será exibido um QR Code no terminal. Use o aplicativo do WhatsApp para escanear o código e autenticar o bot. 
+
+Certifique-se de que o QR Code seja escaneado rapidamente, pois ele expira após alguns segundos. Caso expire, reinicie o bot para gerar um novo QR Code.
+
 ## Deploy
 
 Para implantar este projeto:
